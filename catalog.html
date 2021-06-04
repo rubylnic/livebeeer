@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="СИИР. Производство столярных изделий">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>СИИР. Производство столярных изделий</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/prata-regular.woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__upper">
+      <div class="container">
+        <div class="header__container">
+          <button class="header__burger" type="button" aria-label="Кнопка открытия меню">
+            <svg width="20" height="20">
+              <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <a class="header__logo" href="/">
+            <svg class="header__svg" width="180" height="50">
+            <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+          </svg>
+          </a>
+
+          <div class="header__icons">
+            <a class="header__icon" href="" title="Личный кабинет">
+              <svg width="27" height="30">
+                <use xlink:href="img/sprite_auto.svg#icon-person"></use>
+              </svg>
+            </a>
+
+            <a class="header__icon" href="" title="Корзина">
+              <svg width="34" height="30">
+                <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+              </svg>
+              <span class="header__number header__cart">1</span>
+            </a>
+
+
+            <button class="header__search-button" type="button" aria-label="Кнопка открытия поиска">
+            <svg width="20" height="20">
+              <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+            </svg>
+          </button>
+            <form class="header__search header__search--hidden">
+              <input class="header__input" placeholder="Поиск по сайту">
+              <button class="header__form-close"><svg width="20" height="20">
+              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+            </svg></button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <nav class="header__lower black-bg nav nav--hidden">
+      <div class="container">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link open-modal" href="#" title="О нас" data-modal="1">О нас</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" title="Лестницы">Лестницы</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" title="Интерьер">Интерьер</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" title="Мебель на заказ">Мебель на заказ</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" title="Цены">Цены</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" title="Наши работы">Наши работы</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" title="Контакты">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+
+    <section class="catalog">
+      <div class="container">
+        <div class="catalog__container">
+          <h1 class="catalog__heading heading">Фильтрованное</h1>
+          <div class="catalog__filters">
+            <button class="catalog__filter catalog__filter--active filter-name"> По названию<svg width="19" height="14">
+            <use xlink:href="img/sprite_auto.svg#icon-filter"></use>
+          </svg></button>
+            <button class="catalog__filter filter-price"> 
+            По цене
+            <svg width="19" height="14">
+            <use xlink:href="img/sprite_auto.svg#icon-filter"></use>
+          </svg></button>
+          </div>
+        </div>
+        <ul class="catalog__list">
+          <li class="product__item  liked">
+            <div class="product__img-and-price">
+              <div class="product__img-container">
+                <img class="product__img lazyload" src="img/slide-1.png" data-srcset="img/slide-1.png" srcset="img/spinner.svg" width="53" height="192" alt="VILLACUBERA TRADICIONAL">
+              </div>
+              <p class="product__price-circle"><span>540 &#8381;</span></p>
+            </div>
+            <div class="product__container">
+              <h3 class="product__heading">VILLACUBERA TRADICIONAL</h3>
+              <span class="product__volume">700 мл</span>
+              <p class="product__price">540 &#8381;</p>
+              <button class="product__button button">
+            <svg class="footer__svg" width="25" height="25">
+              <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+            </svg>
+            <span>В корзину</span>
+          </button>
+            </div>
+          </li>
+          <li class="product__item liked ">
+            <div class="product__img-and-price">
+              <div class="product__img-container">
+                <img class="product__img lazyload" src="img/slide-2.png" data-srcset="img/slide-2.png" srcset="img/spinner.svg" width="53" height="192" alt="VILLACUBERA TRADICIONAL">
+              </div>
+              <p class="product__price-circle"><span>540 &#8381;</span></p>
+            </div>
+            <div class="product__container">
+              <h3 class="product__heading">VILLACUBERA TRADICIONAL</h3>
+              <span class="product__volume">700 мл</span>
+              <p class="product__price">540 &#8381;</p>
+              <button class="product__button button">
+            <svg class="footer__svg" width="25" height="25">
+              <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+            </svg>
+            <span>В корзину</span>
+          </button>
+            </div>
+          </li>
+          <li class="product__item liked ">
+            <div class="product__img-and-price">
+              <div class="product__img-container">
+                <img class="product__img lazyload" src="img/slide-3.png" data-srcset="img/slide-3.png" srcset="img/spinner.svg" width="53" height="192" alt="VILLACUBERA TRADICIONAL">
+              </div>
+              <p class="product__price-circle"><span>540 &#8381;</span></p>
+            </div>
+            <div class="product__container">
+              <h3 class="product__heading">VILLACUBERA TRADICIONAL</h3>
+              <span class="product__volume">700 мл</span>
+              <p class="product__price">540 &#8381;</p>
+              <button class="product__button button">
+            <svg class="footer__svg" width="25" height="25">
+              <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+            </svg>
+            <span>В корзину</span>
+          </button>
+            </div>
+          </li>
+          <li class="product__item  liked">
+            <div class="product__img-and-price">
+              <div class="product__img-container">
+                <img class="product__img lazyload" src="img/slide-1.png" data-srcset="img/slide-1.png" srcset="img/spinner.svg" width="53" height="192" alt="VILLACUBERA TRADICIONAL">
+              </div>
+              <p class="product__price-circle"><span>540 &#8381;</span></p>
+            </div>
+            <div class="product__container">
+              <h3 class="product__heading">VILLACUBERA TRADICIONAL</h3>
+              <span class="product__volume">700 мл</span>
+              <p class="product__price">540 &#8381;</p>
+              <button class="product__button button">
+            <svg class="footer__svg" width="25" height="25">
+              <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+            </svg>
+            <span>В корзину</span>
+          </button>
+            </div>
+          </li>
+          <li class="product__item liked ">
+            <div class="product__img-and-price">
+              <div class="product__img-container">
+                <img class="product__img lazyload" src="img/slide-2.png" data-srcset="img/slide-2.png" srcset="img/spinner.svg" width="53" height="192" alt="VILLACUBERA TRADICIONAL">
+              </div>
+              <p class="product__price-circle"><span>540 &#8381;</span></p>
+            </div>
+            <div class="product__container">
+              <h3 class="product__heading">VILLACUBERA TRADICIONAL</h3>
+              <span class="product__volume">700 мл</span>
+              <p class="product__price">540 &#8381;</p>
+              <button class="product__button button">
+            <svg class="footer__svg" width="25" height="25">
+              <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+            </svg>
+            <span>В корзину</span>
+          </button>
+            </div>
+          </li>
+          <li class="product__item liked ">
+            <div class="product__img-and-price">
+              <div class="product__img-container">
+                <img class="product__img lazyload" src="img/slide-3.png" data-srcset="img/slide-3.png" srcset="img/spinner.svg" width="53" height="192" alt="VILLACUBERA TRADICIONAL">
+              </div>
+              <p class="product__price-circle"><span>540 &#8381;</span></p>
+            </div>
+            <div class="product__container">
+              <h3 class="product__heading">VILLACUBERA TRADICIONAL</h3>
+              <span class="product__volume">700 мл</span>
+              <p class="product__price">540 &#8381;</p>
+              <button class="product__button button">
+            <svg class="footer__svg" width="25" height="25">
+              <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+            </svg>
+            <span>В корзину</span>
+          </button>
+            </div>
+          </li>
+          <li class="product__item  liked">
+            <div class="product__img-and-price">
+              <div class="product__img-container">
+                <img class="product__img lazyload" src="img/slide-1.png" data-srcset="img/slide-1.png" srcset="img/spinner.svg" width="53" height="192" alt="VILLACUBERA TRADICIONAL">
+              </div>
+              <p class="product__price-circle"><span>540 &#8381;</span></p>
+            </div>
+            <div class="product__container">
+              <h3 class="product__heading">VILLACUBERA TRADICIONAL</h3>
+              <span class="product__volume">700 мл</span>
+              <p class="product__price">540 &#8381;</p>
+              <button class="product__button button">
+            <svg class="footer__svg" width="25" height="25">
+              <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+            </svg>
+            <span>В корзину</span>
+          </button>
+            </div>
+          </li>
+          <li class="product__item liked ">
+            <div class="product__img-and-price">
+              <div class="product__img-container">
+                <img class="product__img lazyload" src="img/slide-2.png" data-srcset="img/slide-2.png" srcset="img/spinner.svg" width="53" height="192" alt="VILLACUBERA TRADICIONAL">
+              </div>
+              <p class="product__price-circle"><span>540 &#8381;</span></p>
+            </div>
+            <div class="product__container">
+              <h3 class="product__heading">VILLACUBERA TRADICIONAL</h3>
+              <span class="product__volume">700 мл</span>
+              <p class="product__price">540 &#8381;</p>
+              <button class="product__button button">
+            <svg class="footer__svg" width="25" height="25">
+              <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+            </svg>
+            <span>В корзину</span>
+          </button>
+            </div>
+          </li>
+          <li class="product__item liked ">
+            <div class="product__img-and-price">
+              <div class="product__img-container">
+                <img class="product__img lazyload" src="img/slide-3.png" data-srcset="img/slide-3.png" srcset="img/spinner.svg" width="53" height="192" alt="VILLACUBERA TRADICIONAL">
+              </div>
+              <p class="product__price-circle"><span>540 &#8381;</span></p>
+            </div>
+            <div class="product__container">
+              <h3 class="product__heading">VILLACUBERA TRADICIONAL</h3>
+              <span class="product__volume">700 мл</span>
+              <p class="product__price">540 &#8381;</p>
+              <button class="product__button button">
+            <svg class="footer__svg" width="25" height="25">
+              <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+            </svg>
+            <span>В корзину</span>
+          </button>
+            </div>
+          </li>
+          <li class="product__item  liked">
+            <div class="product__img-and-price">
+              <div class="product__img-container">
+                <img class="product__img lazyload" src="img/slide-1.png" data-srcset="img/slide-1.png" srcset="img/spinner.svg" width="53" height="192" alt="VILLACUBERA TRADICIONAL">
+              </div>
+              <p class="product__price-circle"><span>540 &#8381;</span></p>
+            </div>
+            <div class="product__container">
+              <h3 class="product__heading">VILLACUBERA TRADICIONAL</h3>
+              <span class="product__volume">700 мл</span>
+              <p class="product__price">540 &#8381;</p>
+              <button class="product__button button">
+            <svg class="footer__svg" width="25" height="25">
+              <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+            </svg>
+            <span>В корзину</span>
+          </button>
+            </div>
+          </li>
+          <li class="product__item liked ">
+            <div class="product__img-and-price">
+              <div class="product__img-container">
+                <img class="product__img lazyload" src="img/slide-2.png" data-srcset="img/slide-2.png" srcset="img/spinner.svg" width="53" height="192" alt="VILLACUBERA TRADICIONAL">
+              </div>
+              <p class="product__price-circle"><span>540 &#8381;</span></p>
+            </div>
+            <div class="product__container">
+              <h3 class="product__heading">VILLACUBERA TRADICIONAL</h3>
+              <span class="product__volume">700 мл</span>
+              <p class="product__price">540 &#8381;</p>
+              <button class="product__button button">
+            <svg class="footer__svg" width="25" height="25">
+              <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+            </svg>
+            <span>В корзину</span>
+          </button>
+            </div>
+          </li>
+          <li class="product__item liked ">
+            <div class="product__img-and-price">
+              <div class="product__img-container">
+                <img class="product__img lazyload" src="img/slide-3.png" data-srcset="img/slide-3.png" srcset="img/spinner.svg" width="53" height="192" alt="VILLACUBERA TRADICIONAL">
+              </div>
+              <p class="product__price-circle"><span>540 &#8381;</span></p>
+            </div>
+            <div class="product__container">
+              <h3 class="product__heading">VILLACUBERA TRADICIONAL</h3>
+              <span class="product__volume">700 мл</span>
+              <p class="product__price">540 &#8381;</p>
+              <button class="product__button button">
+            <svg class="footer__svg" width="25" height="25">
+              <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+            </svg>
+            <span>В корзину</span>
+          </button>
+            </div>
+          </li>
+        </ul>
+        <button class="catalog__button button"><img src="img/icons/show-more.png" width="23" height="19" alt="иконка показать еще">
+    Показать еще</button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__upper">
+        <nav class="footer__nav">
+          <div class="container">
+            <div class="footer__list container">
+              <a class="footer__item" href="" title="Главная">
+                <img src="img/icons/icon-house.svg" alt="Главная" width="27" height="21">
+              </a>
+              <a class="footer__item" href="" title="Личный кабинет">
+                <svg width="21" height="23">
+                  <use xlink:href="img/sprite_auto.svg#icon-person"></use>
+                </svg>
+              </a>
+              <a class="footer__item" href="" title="Избранное">
+                <svg width="21" height="19">
+                  <use xlink:href="img/sprite_auto.svg#icon-heart"></use>
+                </svg>
+                <span class="footer__number footer__favourite">10</span>
+              </a>
+
+              <a class="footer__item" href="" title="Корзина">
+                <svg width="25" height="22">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg>
+                <span class="footer__number footer__cart">1</span>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__lower">
+        <a class="footer__logo" href="#">
+          <svg class="footer__svg" width="124" height="34">
+            <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <a class="footer__tel" href="tel:+79218889988" title="8 921) 888-99-88">8 (921) 888-99-88</a>
+        <p class="footer__address"><span>Спб</span><span class="footer__comma">, </span><span>Большая морская 8</span></p>
+        <div class="footer__socials">
+          <a class="footer__social" href="" title="Инстаграм">
+            <svg width="27" height="26" aria-label="иконка инстаграм">
+              <use xlink:href="img/sprite_auto.svg#icon-inst"></use>
+            </svg>
+          </a>
+          <a class="footer__social" href="" title="Вконтакте">
+            <svg width="42" height="24" aria-label="иконка вконтакте">
+              <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
+            </svg>
+          </a>
+          <a class="footer__social" href="" title="Facebook">
+            <svg width="19" height="36" aria-label="иконка facebook">
+              <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <p class="footer__copyright">&copy; Copyright 2021 </p>
+    </div>
+  </footer>
+
+  <script src="js/vendors.js"></script>
+  <script src="js/main.js"></script>
+</body></html>

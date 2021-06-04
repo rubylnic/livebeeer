@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="СИИР. Производство столярных изделий">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>СИИР. Производство столярных изделий</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/agleecr.woff2" as="font" crossorigin="anonymous">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__upper">
+      <div class="container">
+        <div class="header__container">
+          <button class="header__burger" type="button" aria-label="Кнопка открытия меню">
+            <svg width="20" height="20">
+              <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <a class="header__logo" href="/" title="LiveBeer">
+            <svg class="header__svg" width="180" height="50">
+            <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+          </svg>
+          </a>
+
+          <div class="header__icons">
+            <a class="header__icon" href="" title="Личный кабинет">
+              <svg width="27" height="30">
+                <use xlink:href="img/sprite_auto.svg#icon-person"></use>
+              </svg>
+            </a>
+
+            <a class="header__icon" href="" title="Корзина">
+              <svg width="34" height="30">
+                <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+              </svg>
+              <span class="header__number header__cart">1</span>
+            </a>
+
+
+            <button class="header__search-button" type="button" aria-label="Кнопка открытия поиска">
+            <svg width="20" height="20">
+              <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+            </svg>
+          </button>
+            <form class="header__search header__search--hidden">
+              <input class="header__input" placeholder="Поиск по сайту">
+              <button class="header__form-close"><svg width="20" height="20">
+              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+            </svg></button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <nav class="header__lower black-bg nav nav--hidden">
+      <div class="container">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link open-modal" href="#" title="О нас" data-modal="1">О нас</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" title="Лестницы">Лестницы</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" title="Интерьер">Интерьер</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" title="Мебель на заказ">Мебель на заказ</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" title="Цены">Цены</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" title="Наши работы">Наши работы</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" title="Контакты">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="main-slider">
+      <div class="container">
+        <h2 class="visually-hidden">Главный баннер</h2>
+        <div class="main-slider__slider-container swiper-container">
+          <ul class="main-slider__slider swiper-wrapper">
+            <li class="main-slider__slide swiper-slide">
+              <picture>
+                <source srcset="img/main-slide-1-d.png" media="(min-width: 1024px)">
+                <img class="main-slider__img lazyload" src="img/main-slide-1.png" data-srcset="img/main-slide-1.png" srcset="img/spinner.svg" width="309" height="188" alt="Слайд">
+              </picture>
+              <div class="main-slider__info">
+                <h3 class="main-slider__heading">Третья пинта в подарок</h3>
+                <p class="main-slider__p">Подробности у продавца</p>
+                <a class="main-slider__button button" href="#" title="Подробнее">Подробнее</a>
+              </div>
+            </li>
+            <li class="main-slider__slide swiper-slide">
+              <picture>
+                <source srcset="img/main-slide-1-d.png" media="(min-width: 1024px)">
+                <img class="main-slider__img lazyload" src="img/main-slide-1.png" data-srcset="img/main-slide-1.png" srcset="img/spinner.svg" width="309" height="188" alt="Слайд">
+              </picture>
+              <div class="main-slider__info">
+                <h3 class="main-slider__heading">Третья пинта в подарок</h3>
+                <p class="main-slider__p">Подробности у продавца</p>
+                <a class="main-slider__button button" href="#" title="Подробнее">Подробнее</a>
+              </div>
+            </li>
+            <li class="main-slider__slide swiper-slide">
+              <picture>
+                <source srcset="img/main-slide-1-d.png" media="(min-width: 1024px)">
+                <img class="main-slider__img lazyload" src="img/main-slide-1.png" data-srcset="img/main-slide-1.png" srcset="img/spinner.svg" width="309" height="188" alt="Слайд">
+              </picture>
+              <div class="main-slider__info">
+                <h3 class="main-slider__heading">Третья пинта в подарок</h3>
+                <p class="main-slider__p">Подробности у продавца</p>
+                <a class="main-slider__button button" href="#" title="Подробнее">Подробнее</a>
+              </div>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="set">
+      <div class="container">
+        <h2 class="set__main-heading heading">Подборки</h2>
+        <ul class="set__list">
+          <li class="set__item">
+
+            <picture>
+              <source srcset="img/set-1-d.jpg" media="(min-width: 1024px)">
+              <img class="set__img lazyload" src="img/set-1.jpg" data-srcset="img/set-1.jpg" srcset="img/spinner.svg" width="290" height="180" alt="Подборка">
+            </picture>
+            <h3 class="set__heading">В дорогу</h3>
+          </li>
+          <li class="set__item">
+            <picture>
+              <source srcset="img/set-2-d.jpg" media="(min-width: 1024px)">
+              <img class="set__img lazyload" src="img/set-2.jpg" data-srcset="img/set-2.jpg" srcset="img/spinner.svg" width="290" height="180" alt="Подборка">
+            </picture>
+            <h3 class="set__heading">Самый сок</h3>
+          </li>
+          <li class="set__item">
+            <picture>
+              <source srcset="img/set-3-d.jpg" media="(min-width: 1024px)">
+              <img class="set__img lazyload" src="img/set-3.jpg" data-srcset="img/set-3.jpg" srcset="img/spinner.svg" width="290" height="180" alt="Подборка">
+            </picture>
+            <h3 class="set__heading">Что-то с чем-то</h3>
+          </li>
+          <li class="set__item">
+            <picture>
+              <source srcset="img/set-4-d.jpg" media="(min-width: 1024px)">
+              <img class="set__img lazyload" src="img/set-4.jpg" data-srcset="img/set-4.jpg" srcset="img/spinner.svg" width="290" height="180" alt="Подборка">
+            </picture>
+            <h3 class="set__heading">Ай Пи Эй</h3>
+          </li>
+          <li class="set__item">
+            <picture>
+              <source srcset="img/set-5-d.jpg" media="(min-width: 1024px)">
+              <img class="set__img lazyload" src="img/set-5.jpg" data-srcset="img/set-5.jpg" srcset="img/spinner.svg" width="290" height="180" alt="Подборка">
+            </picture>
+            <h3 class="set__heading">Домашняя вечеринка</h3>
+          </li>
+          <li class="set__item">
+            <picture>
+              <source srcset="img/set-6-d.jpg" media="(min-width: 1024px)">
+              <img class="set__img lazyload" src="img/set-6.jpg" data-srcset="img/set-6.jpg" srcset="img/spinner.svg" width="290" height="180" alt="Подборка">
+            </picture>
+            <h3 class="set__heading">Крафтовое пиво</h3>
+          </li>
+          <li class="set__item">
+            <picture>
+              <source srcset="img/set-7-d.jpg" media="(min-width: 1024px)">
+              <img class="set__img lazyload" src="img/set-7.jpg" data-srcset="img/set-7.jpg" srcset="img/spinner.svg" width="290" height="180" alt="Подборка">
+            </picture>
+            <h3 class="set__heading">Можно подарить</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="new">
+      <div class="bg"></div>
+      <div class="container">
+        <h2 class="new__heading heading">Новинки</h2>
+        <div class="new__slider slider swiper-container">
+          <ul class="product__list swiper-wrapper">
+            <li class="product__item swiper-slide liked">
+              <div class="product__img-container">
+                <img class="product__img lazyload" src="img/slide-1.png" data-srcset="img/slide-1.png" srcset="img/spinner.svg" width="53" height="192" alt="Слайд">
+              </div>
+              <div class="product__container">
+                <h3 class="product__heading">VILLACUBERA TRADICIONAL</h3>
+                <span class="product__volume">700 мл</span>
+                <p class="product__price">540 &#8381;</p>
+                <button class="product__button button">
+                <svg class="footer__svg" width="25" height="25">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg>
+                <span>В корзину</span>
+              </button>
+              </div>
+            </li>
+            <li class="product__item liked swiper-slide">
+              <div class="product__img-container">
+                <img class="product__img lazyload" src="img/slide-2.png" data-srcset="img/slide-2.png" srcset="img/spinner.svg" width="53" height="192" alt="Слайд">
+              </div>
+              <div class="product__container">
+                <h3 class="product__heading">VILLACUBERA TRADICIONAL</h3>
+                <span class="product__volume">700 мл</span>
+                <p class="product__price">540 &#8381;</p>
+                <button class="product__button button">
+                <svg class="footer__svg" width="25" height="25">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg>
+                <span>В корзину</span>
+              </button>
+              </div>
+            </li>
+            <li class="product__item liked swiper-slide">
+              <div class="product__img-container">
+                <img class="product__img lazyload" src="img/slide-3.png" data-srcset="img/slide-3.png" srcset="img/spinner.svg" width="53" height="192" alt="Слайд">
+              </div>
+              <div class="product__container">
+                <h3 class="product__heading">VILLACUBERA TRADICIONAL</h3>
+                <span class="product__volume">700 мл</span>
+                <p class="product__price">540 &#8381;</p>
+                <button class="product__button button">
+                <svg class="footer__svg" width="25" height="25">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg>
+                <span>В корзину</span>
+              </button>
+              </div>
+            </li>
+            <li class="product__item swiper-slide liked">
+              <div class="product__img-container">
+                <img class="product__img lazyload" src="img/slide-1.png" data-srcset="img/slide-1.png" srcset="img/spinner.svg" width="53" height="192" alt="Слайд">
+              </div>
+              <div class="product__container">
+                <h3 class="product__heading">VILLACUBERA TRADICIONAL</h3>
+                <span class="product__volume">700 мл</span>
+                <p class="product__price">540 &#8381;</p>
+                <button class="product__button button">
+                <svg class="footer__svg" width="25" height="25">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg>
+                <span>В корзину</span>
+              </button>
+              </div>
+            </li>
+            <li class="product__item liked swiper-slide">
+              <div class="product__img-container">
+                <img class="product__img lazyload" src="img/slide-2.png" data-srcset="img/slide-2.png" srcset="img/spinner.svg" width="53" height="192" alt="Слайд">
+              </div>
+              <div class="product__container">
+                <h3 class="product__heading">VILLACUBERA TRADICIONAL</h3>
+                <span class="product__volume">700 мл</span>
+                <p class="product__price">540 &#8381;</p>
+                <button class="product__button button">
+                <svg class="footer__svg" width="25" height="25">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg>
+                <span>В корзину</span>
+              </button>
+              </div>
+            </li>
+            <li class="product__item liked swiper-slide">
+              <div class="product__img-container">
+                <img class="product__img lazyload" src="img/slide-3.png" data-srcset="img/slide-3.png" srcset="img/spinner.svg" width="53" height="192" alt="Слайд">
+              </div>
+              <div class="product__container">
+                <h3 class="product__heading">VILLACUBERA TRADICIONAL</h3>
+                <span class="product__volume">700 мл</span>
+                <p class="product__price">540 &#8381;</p>
+                <button class="product__button button">
+                <svg class="footer__svg" width="25" height="25">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg>
+                <span>В корзину</span>
+              </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="blog">
+      <div class="container">
+        <div class="blog__heading-container">
+          <h2 class="blog__main-heading heading">Блог</h2><a class="blog__all" href="#" title="Смотреть все посты">Смотреть все посты</a></div>
+        <div class="blog__list">
+          <article class="blog__item">
+            <img class="blog__img lazyload" src="img/blog.jpg" data-srcset="img/blog.jpg" srcset="img/spinner.svg" width="290" height="140" alt="Фото пиво">
+            <div class="blog__container">
+              <time class="blog__date" datetime="2021-04-01">1 апреля 2021</time>
+              <h3 class="blog__heading">«Крафтовая эволюция», или Причины роста популярности маленьких пивоварен</h3>
+              <p class="blog__info">На заре развития пивоварение было сугубо домашним занятием. И вплоть до XIX века...</p>
+              <a class="blog__link" href="" title="«Крафтовая эволюция», или Причины роста популярности маленьких пивоварен">Читать дальше</a>
+            </div>
+          </article>
+          <article class="blog__item">
+            <img class="blog__img lazyload" src="img/blog.jpg" data-srcset="img/blog.jpg" srcset="img/spinner.svg" width="290" height="140" alt="Фото пиво">
+            <div class="blog__container">
+              <time class="blog__date" datetime="2021-04-01">1 апреля 2021</time>
+              <h3 class="blog__heading">«Крафтовая эволюция», или Причины роста популярности маленьких пивоварен</h3>
+              <p class="blog__info">На заре развития пивоварение было сугубо домашним занятием. И вплоть до XIX века...</p>
+              <a class="blog__link" href="" title="«Крафтовая эволюция», или Причины роста популярности маленьких пивоварен">Читать дальше</a>
+            </div>
+          </article>
+          <article class="blog__item">
+            <img class="blog__img lazyload" src="img/blog.jpg" data-srcset="img/blog.jpg" srcset="img/spinner.svg" width="290" height="140" alt="Фото пиво">
+            <div class="blog__container">
+              <time class="blog__date" datetime="2021-04-01">1 апреля 2021</time>
+              <h3 class="blog__heading">«Крафтовая эволюция», или Причины роста популярности маленьких пивоварен</h3>
+              <p class="blog__info">На заре развития пивоварение было сугубо домашним занятием. И вплоть до XIX века...</p>
+              <a class="blog__link" href="" title="«Крафтовая эволюция», или Причины роста популярности маленьких пивоварен">Читать дальше</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="blog">
+      <div class="container">
+        <h2 class="blog__heading heading">Как это работает</h2>
+        <ul class="blog__list">
+          <li class="blog__item">
+          </li>
+        </ul>
+      </div>
+    </section> -->
+    <section class="about">
+      <div class="container">
+        <h2 class="about__heading heading">Как это работает</h2>
+        <ul class="about__list">
+          <li class="about__item">
+            <div class="about__circle">
+              <svg width="66" height="61">
+                <use xlink:href="img/sprite_auto.svg#icon-cart-big"></use>
+              </svg>
+            </div>
+            <h3 class="about__sub-heading">Положить в корзину</h3>
+          </li>
+          <li class="about__item">
+            <div class="about__circle">
+              <svg width="57" height="51">
+                <use xlink:href="img/sprite_auto.svg#icon-pay"></use>
+              </svg>
+            </div>
+            <h3 class="about__sub-heading">Оплатить</h3>
+          </li>
+          <li class="about__item">
+            <div class="about__circle">
+              <svg width="82" height="103">
+                <use xlink:href="img/sprite_auto.svg#icon-beer"></use>
+              </svg>
+            </div>
+            <h3 class="about__sub-heading">Забрать заказ</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__upper">
+        <nav class="footer__nav">
+          <div class="container">
+            <div class="footer__list container">
+              <a class="footer__item" href="" title="Главная">
+                <img src="img/icons/icon-house.svg" alt="Главная" width="27" height="21">
+              </a>
+              <a class="footer__item" href="" title="Личный кабинет">
+                <svg width="21" height="23">
+                  <use xlink:href="img/sprite_auto.svg#icon-person"></use>
+                </svg>
+              </a>
+              <a class="footer__item" href="" title="Избранное">
+                <svg width="21" height="19">
+                  <use xlink:href="img/sprite_auto.svg#icon-heart"></use>
+                </svg>
+                <span class="footer__number footer__favourite">10</span>
+              </a>
+
+              <a class="footer__item" href="" title="Корзина">
+                <svg width="25" height="22">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg>
+                <span class="footer__number footer__cart">1</span>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__lower">
+        <a class="footer__logo" href="#">
+          <svg class="footer__svg" width="124" height="34">
+            <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <a class="footer__tel" href="tel:+79218889988" title="8 921) 888-99-88">8 (921) 888-99-88</a>
+        <p class="footer__address"><span>Спб</span><span class="footer__comma">, </span><span>Большая морская 8</span></p>
+        <div class="footer__socials">
+          <a class="footer__social" href="" title="Инстаграм">
+            <svg width="27" height="26" aria-label="иконка инстаграм">
+              <use xlink:href="img/sprite_auto.svg#icon-inst"></use>
+            </svg>
+          </a>
+          <a class="footer__social" href="" title="Вконтакте">
+            <svg width="42" height="24" aria-label="иконка вконтакте">
+              <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
+            </svg>
+          </a>
+          <a class="footer__social" href="" title="Facebook">
+            <svg width="19" height="36" aria-label="иконка facebook">
+              <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <p class="footer__copyright">&copy; Copyright 2021 </p>
+    </div>
+  </footer>
+
+  <script src="js/vendors.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

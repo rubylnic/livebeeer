@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="СИИР. Производство столярных изделий">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>СИИР. Производство столярных изделий</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/prata-regular.woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__upper">
+      <div class="container">
+        <div class="header__container">
+          <button class="header__burger" type="button" aria-label="Кнопка открытия меню">
+            <svg width="20" height="20">
+              <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <a class="header__logo" href="/">
+            <svg class="header__svg" width="180" height="50">
+            <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+          </svg>
+          </a>
+
+          <div class="header__icons">
+            <a class="header__icon" href="" title="Личный кабинет">
+              <svg width="27" height="30">
+                <use xlink:href="img/sprite_auto.svg#icon-person"></use>
+              </svg>
+            </a>
+
+            <a class="header__icon" href="" title="Корзина">
+              <svg width="34" height="30">
+                <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+              </svg>
+              <span class="header__number header__cart">1</span>
+            </a>
+
+
+            <button class="header__search-button" type="button" aria-label="Кнопка открытия поиска">
+            <svg width="20" height="20">
+              <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+            </svg>
+          </button>
+            <form class="header__search header__search--hidden">
+              <input class="header__input" placeholder="Поиск по сайту">
+              <button class="header__form-close"><svg width="20" height="20">
+              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+            </svg></button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <nav class="header__lower black-bg nav nav--hidden">
+      <div class="container">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link open-modal" href="#" title="О нас" data-modal="1">О нас</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" title="Лестницы">Лестницы</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" title="Интерьер">Интерьер</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" title="Мебель на заказ">Мебель на заказ</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" title="Цены">Цены</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" title="Наши работы">Наши работы</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" title="Контакты">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <section class="contacts">
+        <div class="contacts__container">
+          <h1 class="heading">Районы Спб</h1>
+          <button class="contacts__reset" type="reset">Сбросить фильтр</button>
+        </div>
+        <ul class="contacts__areas">
+          <li class="contacts__area">Адмиралтейский район</li>
+          <li class="contacts__area">Василеостровский район </li>
+          <li class="contacts__area">Выборгский район</li>
+          <li class="contacts__area">Калининский район</li>
+          <li class="contacts__area">Кировский район </li>
+          <li class="contacts__area">Колпинский район</li>
+          <li class="contacts__area">Красногвардейский район</li>
+          <li class="contacts__area">Красносельский район</li>
+          <li class="contacts__area">Кронштадтский район</li>
+          <li class="contacts__area">Курортный район </li>
+          <li class="contacts__area">Московский район </li>
+          <li class="contacts__area">Невский район </li>
+          <li class="contacts__area .contacts__area--active">Петроградский район</li>
+          <li class="contacts__area">Петродворцовый район </li>
+          <li class="contacts__area">Приморский район </li>
+          <li class="contacts__area">Пушкинский район </li>
+          <li class="contacts__area">Фрунзенский район </li>
+          <li class="contacts__area">Центральный район</li>
+        </ul>
+        <h2 class="contacts__area-heading">Петроградский район</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+
+            <h3 class="contacts__heading">Бир Инсайдерс</h3>
+            <address class="contacts__address">ул. Чугунная 20, лит. З, БЦ</address>
+            <div class="contacts__working">
+              <span class="bold">Режим работы:</span>
+              <span>Пн-Пт: 10:00-18:00</span>
+              <span>Сб-Вс: Выходные дни</span>
+            </div>
+
+            <span class="bold">Телефон</span>
+            <a class="contacts__tel" href="tel:89030956704" title="+7 903 095 67 04">+7 903 095 67 04</a>
+            <span class="bold"> e-mail:</span>
+            <a class="contacts__email" href="mailto:info@beer.ru" title="info@beer.ru">info@beer.ru</a>
+            <div class="contacts__container">
+              <button class="contacts__shop" type="button">Товары в магазине</button>
+              <button class="contacts__shop" type="button"><svg width="12" height="16">
+                <use xlink:href="img/sprite_auto.svg#icon-map"></use>
+              </svg>Показать на карте</button>
+            </div>
+          </li>
+        </ul>
+
+      </section>
+
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__upper">
+        <nav class="footer__nav">
+          <div class="container">
+            <div class="footer__list container">
+              <a class="footer__item" href="" title="Главная">
+                <img src="img/icons/icon-house.svg" alt="Главная" width="27" height="21">
+              </a>
+              <a class="footer__item" href="" title="Личный кабинет">
+                <svg width="21" height="23">
+                  <use xlink:href="img/sprite_auto.svg#icon-person"></use>
+                </svg>
+              </a>
+              <a class="footer__item" href="" title="Избранное">
+                <svg width="21" height="19">
+                  <use xlink:href="img/sprite_auto.svg#icon-heart"></use>
+                </svg>
+                <span class="footer__number footer__favourite">10</span>
+              </a>
+
+              <a class="footer__item" href="" title="Корзина">
+                <svg width="25" height="22">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg>
+                <span class="footer__number footer__cart">1</span>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__lower">
+        <a class="footer__logo" href="#">
+          <svg class="footer__svg" width="124" height="34">
+            <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <a class="footer__tel" href="tel:+79218889988" title="8 921) 888-99-88">8 (921) 888-99-88</a>
+        <p class="footer__address"><span>Спб</span><span class="footer__comma">, </span><span>Большая морская 8</span></p>
+        <div class="footer__socials">
+          <a class="footer__social" href="" title="Инстаграм">
+            <svg width="27" height="26" aria-label="иконка инстаграм">
+              <use xlink:href="img/sprite_auto.svg#icon-inst"></use>
+            </svg>
+          </a>
+          <a class="footer__social" href="" title="Вконтакте">
+            <svg width="42" height="24" aria-label="иконка вконтакте">
+              <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
+            </svg>
+          </a>
+          <a class="footer__social" href="" title="Facebook">
+            <svg width="19" height="36" aria-label="иконка facebook">
+              <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <p class="footer__copyright">&copy; Copyright 2021 </p>
+    </div>
+  </footer>
+
+  <script src="js/vendors.js"></script>
+  <script src="js/main.js"></script>
+</body></html>

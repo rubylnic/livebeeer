@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="СИИР. Производство столярных изделий">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>СИИР. Производство столярных изделий</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/prata-regular.woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__upper">
+      <div class="container">
+        <div class="header__container">
+          <button class="header__burger" type="button" aria-label="Кнопка открытия меню">
+            <svg width="20" height="20">
+              <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <a class="header__logo" href="/">
+            <svg class="header__svg" width="180" height="50">
+            <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+          </svg>
+          </a>
+
+          <div class="header__icons">
+            <a class="header__icon" href="" title="Личный кабинет">
+              <svg width="27" height="30">
+                <use xlink:href="img/sprite_auto.svg#icon-person"></use>
+              </svg>
+            </a>
+
+            <a class="header__icon" href="" title="Корзина">
+              <svg width="34" height="30">
+                <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+              </svg>
+              <span class="header__number header__cart">1</span>
+            </a>
+
+
+            <button class="header__search-button" type="button" aria-label="Кнопка открытия поиска">
+            <svg width="20" height="20">
+              <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+            </svg>
+          </button>
+            <form class="header__search header__search--hidden">
+              <input class="header__input" placeholder="Поиск по сайту">
+              <button class="header__form-close"><svg width="20" height="20">
+              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+            </svg></button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <nav class="header__lower black-bg nav nav--hidden">
+      <div class="container">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link open-modal" href="#" title="О нас" data-modal="1">О нас</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" title="Лестницы">Лестницы</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" title="Интерьер">Интерьер</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" title="Мебель на заказ">Мебель на заказ</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" title="Цены">Цены</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" title="Наши работы">Наши работы</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" title="Контакты">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+
+    <section class="card">
+      <div class="card__main-container container">
+        <div class="card__img-container">
+          <picture>
+            <source srcset="img/product.jpg" media="(min-width: 500px)">
+            <img class="card__img lazyload" src="img/slide-2.png" data-srcset="img/slide-2.png" srcset="img/spinner.svg" width="53" height="192" alt="VILLACUBERA TRADICIONAL">
+          </picture>
+        </div>
+        <div class="card__container">
+          <h1 class="card__heading heading">VILLACUBERA TRADICIONAL</h1>
+          <div class="card__volume">700 мл / 6 шт в ящике</div>
+          <div class="card__switch">
+
+            <div class="card__buttons">
+              <div class="card__pcs card__pcs--active card__bottle">
+                <button class="card__pcs-button button-minus">-</button>
+                <div class="card__pcs-number">1 шт.</div>
+                <button class="card__pcs-button button-plus">+</button>
+              </div>
+              <div class="card__pcs card__box">
+                <button class="card__pcs-button button-minus">-</button>
+                <div class="card__pcs-number">1 ящик</div>
+                <button class="card__pcs-button button-plus">+</button>
+              </div>
+            </div>
+            <div class="card__price-container">
+              <div class="card__price">540 &#8381;</div>
+              <div class="card__stars">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+              </div>
+            </div>
+            <button class="card__button button">
+              <svg width="25" height="25">
+                <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+              </svg>
+              <span>В корзину</span>
+            </button>
+
+
+          </div>
+
+
+          <div class="card__about">
+            <h2 class="card__sub-heading heading">О напитке</h2>
+            <p class="card__info">Villacubera - уникальный натуральный сидр. Уникальные яблоки, из которых он сделан, происходят из лучших садов Астурии. Кислотно-горький профиль яблок "Villacubera" дает начало агрессивному сидру, которому удается смягчиться только при длительном
+              созревании в погребе-14 месяцев в каштановых бочках. Его тонкий аромат, богатый нюансами, а также мягкий и вкусный вкус с тонкими нотками горечи - вот некоторые из его основных характеристик.</p>
+          </div>
+          <div class="card__features">
+            <h3 class="card__sub-sub-heading heading">Особенности вкуса</h3>
+            <ul class="card__features-list">
+              <li class="card__feature">Аутентичный</li>
+              <li class="card__feature">веган френдли</li>
+              <li class="card__feature">кислотный</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="recommend">
+      <div class="container">
+        <h2 class="recommend__heading heading">Рекомендуем к пенному</h2>
+        <div class="recommend-slider swiper-container">
+          <ul class="recommend__list swiper-wrapper">
+            <li class="recommend__item swiper-slide">
+
+              <picture>
+                <source srcset="img/chips-d.jpg" media="(min-width: 1024px)">
+                <img class="recommend__img lazyload" src="img/chips.jpg" data-srcset="img/chips.jpg" srcset="img/spinner.svg" width="164" height="90" alt="Чипсы">
+              </picture>
+              <h2 class="recommend__sub-heading">Чипсы</h2>
+            </li>
+            <li class="recommend__item swiper-slide">
+
+              <picture>
+                <source srcset="img/pistachios-d.jpg" media="(min-width: 1024px)">
+                <img class="recommend__img lazyload" src="img/pistachios.jpg" data-srcset="img/pistachios.jpg" srcset="img/spinner.svg" width="164" height="90" alt="Чипсы">
+              </picture>
+              <h2 class="recommend__sub-heading">Фисташки</h2>
+            </li>
+            <li class="recommend__item swiper-slide">
+
+              <picture>
+                <source srcset="img/chips-d.jpg" media="(min-width: 1024px)">
+                <img class="recommend__img lazyload" src="img/chips.jpg" data-srcset="img/chips.jpg" srcset="img/spinner.svg" width="164" height="90" alt="Чипсы">
+              </picture>
+              <h2 class="recommend__sub-heading">Чипсы</h2>
+            </li>
+            <li class="recommend__item swiper-slide">
+
+              <picture>
+                <source srcset="img/chips-d.jpg" media="(min-width: 1024px)">
+                <img class="recommend__img lazyload" src="img/chips.jpg" data-srcset="img/chips.jpg" srcset="img/spinner.svg" width="164" height="90" alt="Чипсы">
+              </picture>
+              <h2 class="recommend__sub-heading">Чипсы</h2>
+            </li>
+            <li class="recommend__item swiper-slide">
+
+              <picture>
+                <source srcset="img/chips-d.jpg" media="(min-width: 1024px)">
+                <img class="recommend__img lazyload" src="img/chips.jpg" data-srcset="img/chips.jpg" srcset="img/spinner.svg" width="164" height="90" alt="Чипсы">
+              </picture>
+              <h2 class="recommend__sub-heading">Чипсы</h2>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="similar">
+      <div class="container">
+        <h2 class="similar__heading heading">Похожие товары</h2>
+        <div class="product__slider slider swiper-container">
+          <ul class="product__list swiper-wrapper">
+            <li class="product__item swiper-slide liked">
+              <div class="product__img-container">
+                <img class="product__img lazyload" src="img/slide-1.png" data-srcset="img/slide-1.png" srcset="img/spinner.svg" width="53" height="192" alt="Слайд">
+              </div>
+              <div class="product__container">
+                <h3 class="product__heading">VILLACUBERA TRADICIONAL</h3>
+                <span class="product__volume">700 мл</span>
+                <p class="product__price">540 &#8381;</p>
+                <button class="product__button button">
+              <svg class="footer__svg" width="25" height="25">
+                <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+              </svg>
+              <span>В корзину</span>
+            </button>
+              </div>
+            </li>
+            <li class="product__item liked swiper-slide">
+              <div class="product__img-container">
+                <img class="product__img lazyload" src="img/slide-2.png" data-srcset="img/slide-2.png" srcset="img/spinner.svg" width="53" height="192" alt="Слайд">
+              </div>
+              <div class="product__container">
+                <h3 class="product__heading">VILLACUBERA TRADICIONAL</h3>
+                <span class="product__volume">700 мл</span>
+                <p class="product__price">540 &#8381;</p>
+                <button class="product__button button">
+              <svg class="footer__svg" width="25" height="25">
+                <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+              </svg>
+              <span>В корзину</span>
+            </button>
+              </div>
+            </li>
+            <li class="product__item liked swiper-slide">
+              <div class="product__img-container">
+                <img class="product__img lazyload" src="img/slide-3.png" data-srcset="img/slide-3.png" srcset="img/spinner.svg" width="53" height="192" alt="Слайд">
+              </div>
+              <div class="product__container">
+                <h3 class="product__heading">VILLACUBERA TRADICIONAL</h3>
+                <span class="product__volume">700 мл</span>
+                <p class="product__price">540 &#8381;</p>
+                <button class="product__button button">
+              <svg class="footer__svg" width="25" height="25">
+                <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+              </svg>
+              <span>В корзину</span>
+            </button>
+              </div>
+            </li>
+            <li class="product__item swiper-slide liked">
+              <div class="product__img-container">
+                <img class="product__img lazyload" src="img/slide-1.png" data-srcset="img/slide-1.png" srcset="img/spinner.svg" width="53" height="192" alt="Слайд">
+              </div>
+              <div class="product__container">
+                <h3 class="product__heading">VILLACUBERA TRADICIONAL</h3>
+                <span class="product__volume">700 мл</span>
+                <p class="product__price">540 &#8381;</p>
+                <button class="product__button button">
+              <svg class="footer__svg" width="25" height="25">
+                <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+              </svg>
+              <span>В корзину</span>
+            </button>
+              </div>
+            </li>
+            <li class="product__item liked swiper-slide">
+              <div class="product__img-container">
+                <img class="product__img lazyload" src="img/slide-2.png" data-srcset="img/slide-2.png" srcset="img/spinner.svg" width="53" height="192" alt="Слайд">
+              </div>
+              <div class="product__container">
+                <h3 class="product__heading">VILLACUBERA TRADICIONAL</h3>
+                <span class="product__volume">700 мл</span>
+                <p class="product__price">540 &#8381;</p>
+                <button class="product__button button">
+              <svg class="footer__svg" width="25" height="25">
+                <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+              </svg>
+              <span>В корзину</span>
+            </button>
+              </div>
+            </li>
+            <li class="product__item liked swiper-slide">
+              <div class="product__img-container">
+                <img class="product__img lazyload" src="img/slide-3.png" data-srcset="img/slide-3.png" srcset="img/spinner.svg" width="53" height="192" alt="Слайд">
+              </div>
+              <div class="product__container">
+                <h3 class="product__heading">VILLACUBERA TRADICIONAL</h3>
+                <span class="product__volume">700 мл</span>
+                <p class="product__price">540 &#8381;</p>
+                <button class="product__button button">
+              <svg class="footer__svg" width="25" height="25">
+                <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+              </svg>
+              <span>В корзину</span>
+            </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="about-drink">
+      <div class="container">
+        <div class="about-drink__container">
+          <h2 class="about-drink__heading heading">Яблочный сидр</h2>
+          <div class="about-drink__info">
+            <p>Технология приготовления сидра чем-то напоминает виноделие. Здесь тоже важен климат, регион, терруар и сорта яблок. Такой напиток отлично подойдет на каждый день и как дополнение к любому блюду высокой кухни.</p>
+
+            <p><span>ЧТО ВНУТРИ</span> Вкус и аромат зависят от страны изготовителя. Басские сидры считаются одними из самых ярких и сложных напитков. Они сухие, нефильтрованные и не газированные. Будто яблочный сок стал напитком 18+.</p>
+
+            <p>Французский сидр больше похож на игристое. Он может быть розовым или золотистыми, газированным и не очень, насыщенно-сладким или с приятной терпкостью.</p>
+          </div>
+        </div>
+        <img class="about-drink__img lazyload" src="img/cider.jpg" data-srcset="img/cider.jpg" srcset="img/spinner.svg" width="360" height="400" alt="Фото сидра">
+      </div>
+    </section>
+    <section class="blog">
+      <div class="container">
+        <div class="blog__heading-container">
+          <h2 class="blog__main-heading heading">Блог</h2><a class="blog__all" href="#" title="Смотреть все посты">Смотреть все посты</a></div>
+        <div class="blog__list">
+          <article class="blog__item">
+            <img class="blog__img lazyload" src="img/blog.jpg" data-srcset="img/blog.jpg" srcset="img/spinner.svg" width="290" height="140" alt="Фото пиво">
+            <div class="blog__container">
+              <time class="blog__date" datetime="2021-04-01">1 апреля 2021</time>
+              <h3 class="blog__heading">«Крафтовая эволюция», или Причины роста популярности маленьких пивоварен</h3>
+              <p class="blog__info">На заре развития пивоварение было сугубо домашним занятием. И вплоть до XIX века...</p>
+              <a class="blog__link" href="" title="«Крафтовая эволюция», или Причины роста популярности маленьких пивоварен">Читать дальше</a>
+            </div>
+          </article>
+          <article class="blog__item">
+            <img class="blog__img lazyload" src="img/blog.jpg" data-srcset="img/blog.jpg" srcset="img/spinner.svg" width="290" height="140" alt="Фото пиво">
+            <div class="blog__container">
+              <time class="blog__date" datetime="2021-04-01">1 апреля 2021</time>
+              <h3 class="blog__heading">«Крафтовая эволюция», или Причины роста популярности маленьких пивоварен</h3>
+              <p class="blog__info">На заре развития пивоварение было сугубо домашним занятием. И вплоть до XIX века...</p>
+              <a class="blog__link" href="" title="«Крафтовая эволюция», или Причины роста популярности маленьких пивоварен">Читать дальше</a>
+            </div>
+          </article>
+          <article class="blog__item">
+            <img class="blog__img lazyload" src="img/blog.jpg" data-srcset="img/blog.jpg" srcset="img/spinner.svg" width="290" height="140" alt="Фото пиво">
+            <div class="blog__container">
+              <time class="blog__date" datetime="2021-04-01">1 апреля 2021</time>
+              <h3 class="blog__heading">«Крафтовая эволюция», или Причины роста популярности маленьких пивоварен</h3>
+              <p class="blog__info">На заре развития пивоварение было сугубо домашним занятием. И вплоть до XIX века...</p>
+              <a class="blog__link" href="" title="«Крафтовая эволюция», или Причины роста популярности маленьких пивоварен">Читать дальше</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <!-- <h2 class="reviews__heading heading">Отзывы</h2>
+        <ul class="reviews__container">
+          <li class="reviews__item"></li>
+        </ul> -->
+        <h2 class="reviews__heading heading">Оставить отзыв</h2>
+        <form class="form">
+          <div class="form__container">
+            <input class="form__input" type="text" name="name" placeholder="Имя">
+            <input class="form__input" type="text" name="email" placeholder="E-mail">
+          </div>
+          <textarea class="form__input form__review-text" name="review" cols="30" rows="4" placeholder="Отзыв"></textarea>
+        </form>
+        <button class="form__button button" type="submit">Отправить</button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__upper">
+        <nav class="footer__nav">
+          <div class="container">
+            <div class="footer__list container">
+              <a class="footer__item" href="" title="Главная">
+                <img src="img/icons/icon-house.svg" alt="Главная" width="27" height="21">
+              </a>
+              <a class="footer__item" href="" title="Личный кабинет">
+                <svg width="21" height="23">
+                  <use xlink:href="img/sprite_auto.svg#icon-person"></use>
+                </svg>
+              </a>
+              <a class="footer__item" href="" title="Избранное">
+                <svg width="21" height="19">
+                  <use xlink:href="img/sprite_auto.svg#icon-heart"></use>
+                </svg>
+                <span class="footer__number footer__favourite">10</span>
+              </a>
+
+              <a class="footer__item" href="" title="Корзина">
+                <svg width="25" height="22">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg>
+                <span class="footer__number footer__cart">1</span>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__lower">
+        <a class="footer__logo" href="#">
+          <svg class="footer__svg" width="124" height="34">
+            <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <a class="footer__tel" href="tel:+79218889988" title="8 921) 888-99-88">8 (921) 888-99-88</a>
+        <p class="footer__address"><span>Спб</span><span class="footer__comma">, </span><span>Большая морская 8</span></p>
+        <div class="footer__socials">
+          <a class="footer__social" href="" title="Инстаграм">
+            <svg width="27" height="26" aria-label="иконка инстаграм">
+              <use xlink:href="img/sprite_auto.svg#icon-inst"></use>
+            </svg>
+          </a>
+          <a class="footer__social" href="" title="Вконтакте">
+            <svg width="42" height="24" aria-label="иконка вконтакте">
+              <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
+            </svg>
+          </a>
+          <a class="footer__social" href="" title="Facebook">
+            <svg width="19" height="36" aria-label="иконка facebook">
+              <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <p class="footer__copyright">&copy; Copyright 2021 </p>
+    </div>
+  </footer>
+  <section class="modal modal--closed" data-modal-content="1">
+    <div class="modal__overlay">
+      <div class="modal__container">
+        <button class="modal__button-close" type="button" aria-label="Закрыть модальное окно"></button>
+        <h2 class="modal__heading heading">О нас</h2>
+        <p class="modal__info">Производство столярных изделий существует с 1998 года и территориально располагается в Санкт-Петербурге. В производстве не используем покупной мебельный щит, делаем все сами. По фотографии клиента (в пределах разумного) можем изготовить любую
+          продукцию. Работаем с широким ассортиментом массива и МДФ, что позволяет подобрать клиенту под свой бюджет желаемую продукцию. Комбинируем материалы.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+  </script>
+  <script src="js/vendors.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
